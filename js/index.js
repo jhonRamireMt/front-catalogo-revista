@@ -18,7 +18,7 @@ function setRegistro(){
             };
             let dataToSend = JSON.stringify(myData);
             $.ajax({
-                url:"http://localhost:8080/api/user/new/",
+                url:"http://144.22.57.2:8080/api/user/new/",
                 type:"POST",
                 contentType: "application/json",
                 dataType:"json",
@@ -46,7 +46,7 @@ function logIn(){
         $.ajax({
             dataType:"json",
             typ:"GET",
-            url: "http://localhost:8080/api/user/"+email+"/"+password,
+            url: "http://144.22.57.2:8080/api/user/"+email+"/"+password,
             success:function(json){
                 if(json.id == null && json.name == "NO DEFINIDO"){
                     $("#inicio-fail").empty();
@@ -72,7 +72,7 @@ function recuperarContraseña(){
         $.ajax({
             dataType:"json",
             typ:"GET",
-            url: "http://localhost:8080/api/user/"+email,
+            url: "http://144.22.57.2:8080/api/user/"+email,
             success:function(respuesta){
                 if(respuesta == true){
                     alert("Hemos enviado la contraseña a tu correo")
