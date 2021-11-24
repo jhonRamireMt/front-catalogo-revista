@@ -10,7 +10,6 @@ function setRegistro(){
         if($("#registro-nombre").val() == "" || $("#registro-email").val() == "" || $("#registro-password-1").val() =="" ){
             alert("Todos los campos son obligatorios")   
         }else{       
-            $("#ok").append("Contraseñas son Identicas");
             let myData = {
                 name: $("#registro-nombre").val(),
                 email: $("#registro-email").val(),
