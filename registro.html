@@ -62,15 +62,21 @@
       </div>
       <div class="mb-4">
         <label for="email" class="form-label"> Email</label>
-        <input type="email" class="form-control" name="email" id="registro-email" required>
+        <input type="email" class="form-control" name="email" id="registro-email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
       </div>
       <div class="mb-4">
         <label for="passrord" class="form-label"> Password</label>
-        <input type="password" class="form-control" name="Password" id="registro-password-1" required>
+        <input type="password" class="form-control" name="Password" id="registro-password-1" attern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.
+        Puede tener otros símbolos.
+        Ejemplos:
+        w3Unpocodet0d0*" required alt="strongPass ">
       </div>
       <div class="mb-4">
         <label for="passrord" class="form-label"> Password</label>
-        <input type="password" class="form-control" name="Password" id="registro-password-2" required>
+        <input type="password" class="form-control" name="Password" id="registro-password-2" attern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.
+        Puede tener otros símbolos.
+        Ejemplos:
+        w3Unpocodet0d0*" required alt="strongPass ">
       <!-- Verificación de contraseñas -->
       <div id="error" class="alerta-msg-red" role="alert"></div>
       <div id="ok" class="alerta-msg-green" role="alert"></div>
